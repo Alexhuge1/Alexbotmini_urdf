@@ -7,6 +7,24 @@
         <equality solref='0.001 2'/>
     </default>
 
+  <asset>
+    <mesh name="base_link"  file="../meshes/base_link.STL"/>
+    
+    <mesh name="rightlink1" file="../meshes/rightlink1.STL"/>
+    <mesh name="rightlink2" file="../meshes/rightlink2.STL"/>
+    <mesh name="rightlink3" file="../meshes/rightlink3.STL"/>
+    <mesh name="rightlink4" file="../meshes/rightlink4.STL"/>
+    <mesh name="rightlink5" file="../meshes/rightlink5.STL"/>
+    <mesh name="rightlink6" file="../meshes/rightlink6.STL"/>
+
+    <mesh name="leftlink1" file="../meshes/leftlink1.STL"/>
+    <mesh name="leftlink2" file="../meshes/leftlink2.STL"/>
+    <mesh name="leftlink3" file="../meshes/leftlink3.STL"/>
+    <mesh name="leftlink4" file="../meshes/leftlink4.STL"/>
+    <mesh name="leftlink5" file="../meshes/leftlink5.STL"/>
+    <mesh name="leftlink6" file="../meshes/leftlink6.STL"/>
+  </asset>
+
   <worldbody>
     <body name="base_link">
       <inertial pos="-0.012071 0.11411 -0.041034" quat="0.00146049 0.71148 0.00136861 0.702703" mass="4" diaginertia="0.00455766 0.0044348 0.00286634" />
@@ -69,4 +87,33 @@
       </body>
     </body>
   </worldbody>
+    <actuator>
+
+        <motor name="rightjoint1"  joint="rightjoint1" gear="1" ctrllimited="true" ctrlrange="-150 150"/>
+        <motor name="rightjoint2"  joint="rightjoint2" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+        <motor name="rightjoint3"  joint="rightjoint3" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+        <motor name="rightjoint4"  joint="rightjoint4" gear="1" ctrllimited="true" ctrlrange="-150 150"/>
+        <motor name="rightjoint5"  joint="rightjoint5" gear="1" ctrllimited="true" ctrlrange="-58.5 58.5"/>
+        <motor name="rightjoint6"  joint="rightjoint6" gear="1" ctrllimited="true" ctrlrange="-58.5 58.5"/>
+
+        <motor name="leftjoint1"  joint="leftjoint1" gear="1" ctrllimited="true" ctrlrange="-150 150"/>
+        <motor name="leftjoint2"  joint="leftjoint2" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+        <motor name="leftjoint3"  joint="leftjoint3" gear="1" ctrllimited="true" ctrlrange="-80 80"/>
+        <motor name="leftjoint4"  joint="leftjoint4" gear="1" ctrllimited="true" ctrlrange="-150 150"/>
+        <motor name="leftjoint5"  joint="leftjoint5" gear="1" ctrllimited="true" ctrlrange="-58.5 58.5"/>
+        <motor name="leftjoint6"  joint="leftjoint6" gear="1" ctrllimited="true" ctrlrange="-58.5 58.5"/>
+
+    </actuator>
+
+      <sensor>
+          
+        <framequat     name='orientation' objtype='site' noise='0.001' objname='imu'/>
+          <framepos     name='position' objtype='site' noise='0.001' objname='imu'/>
+          <gyro          name='angular-velocity'    site='imu' noise='0.005' cutoff='34.9'/>
+          <velocimeter   name='linear-velocity'     site='imu' noise='0.001' cutoff='30'/>
+          <accelerometer name='linear-acceleration' site='imu' noise='0.005' cutoff='157'/>
+          <magnetometer  name='magnetometer'        site='imu'/>
+
+      </sensor>
+
 </mujoco>

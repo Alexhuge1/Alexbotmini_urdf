@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
 <robot
   name="alexbotmini">
 
@@ -92,7 +90,7 @@
       lower="-1"
       upper="1"
       effort="96"
-      velocity="100" />
+      velocity="10.47" />
   </joint>
   <link
     name="rightlink2">
@@ -149,7 +147,7 @@
       lower="-0.2"
       upper="0.3"
       effort="51"
-      velocity="59" />
+      velocity="6.178465545" />
   </joint>
   <link
     name="rightlink3">
@@ -206,7 +204,7 @@
       lower="-1"
       upper="1"
       effort="51"
-      velocity="59" />
+      velocity="6.178465545" />
   </joint>
   <link
     name="rightlink4">
@@ -263,7 +261,7 @@
       lower="-1"
       upper="1"
       effort="96"
-      velocity="100" />
+      velocity="10.4719755" />
   </joint>
   <link
     name="rightlink5">
@@ -313,7 +311,7 @@
       lower="-1"
       upper="1"
       effort="30"
-      velocity="130" />
+      velocity="13.613568149999999" />
   </joint>
   <link
     name="rightlink6">
@@ -370,7 +368,7 @@
       lower="-0.5"
       upper="0.5"
       effort="30"
-      velocity="130" />
+      velocity="13.613568149999999" />
   </joint>
   <link
     name="leftlink1">
@@ -419,7 +417,7 @@
       lower="-1"
       upper="1"
       effort="96"
-      velocity="100" />
+      velocity="10.4719755" />
   </joint>
   <link
     name="leftlink2">
@@ -476,7 +474,7 @@
       lower="-0.3"
       upper="0.2"
       effort="51"
-      velocity="59" />
+      velocity="10.4719755" />
   </joint>
   <link
     name="leftlink3">
@@ -533,7 +531,7 @@
       lower="-1"
       upper="1"
       effort="51"
-      velocity="59" />
+      velocity="10.4719755" />
   </joint>
   <link
     name="leftlink4">
@@ -590,7 +588,7 @@
       lower="-1"
       upper="1"
       effort="96"
-      velocity="100" />
+      velocity="10.4719755" />
   </joint>
   <link
     name="leftlink5">
@@ -640,7 +638,7 @@
       lower="-1"
       upper="1"
       effort="30"
-      velocity="130" />
+      velocity="13.613568149999999" />
   </joint>
   <link
     name="leftlink6">
@@ -697,6 +695,6 @@
       lower="-0.5"
       upper="0.5"
       effort="30"
-      velocity="130" />
+      velocity="13.613568149999999" />
   </joint>
 </robot>
