@@ -3,7 +3,7 @@
 <robot name="alexbotmini" >
 
   <mujoco>
-    <compiler meshdir="../meshes" discardvisual="false"/>
+    <compiler meshdir="meshes" discardvisual="false"/>
   </mujoco>
 
   <!-- <mujoco>
